@@ -2,13 +2,98 @@
 
 <html>
   <head>
-    <title>INSERT TITLE HERE!</title>
+    <title>Responsive Redesign</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   </head>
 
   <body>
     <!-- TODO: put your HTML code here! -->
+    <h1>Responsive Redesign: Write-Up</h1>
+    <!-- Part 1 -->
+    <div class="page" id="part1data"><h2>PART 1: IDENTIFYING USABILITY PROBLEMS</h2>
+      
+        <h2 class="subheadings">Picking a Website: </h2> 
+        <p>I picked a website for Hilltop Orchards & Furnace Brook Winery. <a href="https://www.hilltoporchards.com/">This is a link to the website.</a>  
+          Below is a screenshot of their homepage that I chose to redesign:
+        </p>
+          <img src="Webpage screenshot.png" alt="" class="image1">
+        <h2 class="subheadings">Finding Problems:</h2>
+        <p>I identified the following problems with the webpage pictured above:</p>
+          <ul>
+            <li>The homepage consists of a single large block of text. This text is in multiple colors and font sizes but there is not enough grouping. This makes learnability low.
+            </li>
+            <li>The contrast between the text and the background in certain regions of the page is not high enough, making text hard to read.
+            </li>
+            <li>
+              The multiple hyperlinks embedded in the large block of text create issues with memorability. Because lots of unrelated information is grouped together without a label, users may not remember where to go for specific information.
+            </li>
+            <li>
+              Navigation bar text is rather small. It may be hard to read.
+            </li>
+        </ul>
+        <h2 class="subheadings">Accessibility:</h2>
+        WebAIM Wave detected the following accessibility concerns on the original webpage:
+        
+          <li>4 empty links</li>
+          <li>10 contrast errors (very low contrast)          </li>
+          <li>13 alerts          </li>
+          <li>14 structural element issues          </li>
+          <li>2 ARIA label issues          </li>
+          <li>3 feature issues          </li>
+        </ul>
+        <br>
+        <p>I could not get a screen reader to work so I used WAVE to simulate a screen reader. The screen reader did not recognise a large amount of important text on the page, such as the address and social media information, and COVID precautions. This poses an accessibility issue because it means that some users would lack critical information about the business.         </p>
+
+      </ol>
+    </div>
+    <!-- Part 2 -->
+    <div class="page" id="part2data"><h2>PART 2: VISUAL REDESIGN</h2>
+      <ol>
+        <li><h2 class="subheadings">Low-fidelity Wireframing:</h2> 
+          <figure>        
+            <img src="low-fi prototypes/Desktop.png" alt="" class="image" >
+            <figcaption class="captions">DESKTOP</figcaption>
+          </figure>
+          <figure>        
+            <img src="low-fi prototypes/Tablet.png" alt="" class="image">
+            <figcaption class="captions">TABLET</figcaption>
+          </figure>
+          <figure>
+            <img src="low-fi prototypes/iPhone.png" alt="" class="image">
+            <figcaption class="captions">PHONE</figcaption>
+          </figure>
+        </li> 
+        <li><h2 class="subheadings">High-fidelity Prototyping:</h2> 
+          <figure>        
+            <img src="high-fi prototypes/Desktop.png" alt="" class="image" >
+            <figcaption class="captions">DESKTOP</figcaption>
+          </figure>
+          <figure>        
+            <img src="high-fi prototypes/Tablet.png" alt="" class="image">
+            <figcaption class="captions">TABLET</figcaption>
+          </figure>
+          <figure>
+            <img src="high-fi prototypes/Phone.png" alt="" class="image">
+            <figcaption class="captions">PHONE</figcaption>
+          </figure>
+        </li>
+        <li><h2 class="subheadings">Visual Design Style Guide:</h2> </li>
+        <img src="Visual Style Guide.png" alt="" class="image1">
+      </ol>
+    </div>
+    <!-- Part 3 -->
+    <div class="page" id="part3data"><h2>PART 3: RESPONSIVE REDESIGN</h2>
+      <p>Thankfully, changing the font size on my browser does not cause any of my webpage content to be compromised. I also used the Chrome
+        Responsive Tool and my page remains responsive for the full range of sizes that my page must be responsive for. Using the WebAIM Wave tool, 
+        my page no longer presented the low contrast errors, feature issues, label issues etc that the original webpage presented.
+      </p>
+      <p>This is a link to my redesigned webpage as deployed on Heroku:<a href="https://murmuring-mesa-58021.herokuapp.com/"> ~ Heroku link ~</a> </p>
+      <br>
+    </div>
   </body>
 </html>
