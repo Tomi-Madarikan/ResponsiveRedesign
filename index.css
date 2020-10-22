@@ -1,26 +1,29 @@
 /* Put your style information here! */
 html, body {
     height: 100%;
+
     }
     
 html {
     display: table;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin: 0px;
 }    
 
+.container {
+    padding-left: 200px !important;
+    padding-right: 200px !important;
+}
 
-body{
-    /* background-color: #111010; */
+body {
     display: table-cell;
     vertical-align: middle;
     font-family: 'Patrick Hand', cursive;    
 }
 
-h1{
+
+h1 {
     font-size: 45px;
-    /* color: aliceblue; */
-    text-align: center;
+    text-align: left;
     color: rgb(99, 73, 64);
     margin-top: 15px;
     margin-bottom: 25px;
@@ -67,8 +70,9 @@ vertical-align: left;
 }
 
 .bg-light {
-    background-color: rgb(223, 196, 196) !important;
+    background-color: rgb(230, 220, 220) !important;
     height: 60px;
+    width: 110%;
     }
 
 .nav-link{
